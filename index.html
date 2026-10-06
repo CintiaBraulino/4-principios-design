@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Análise interativa dos quatro princípios básicos do design aplicados a peças digitais.">
+  <title>4 Princípios — Um olhar crítico sobre interfaces digitais</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="progress" id="progress"></div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Início">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <span>princípios<span class="brand-dot">.</span></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Navegação principal">
+      <a href="#principios">Princípios</a>
+      <a href="#analises">Análises</a>
+      <a href="#redesign">Redesign</a>
+      <a href="#conclusao">Conclusão</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileNav">Menu <span>↗</span></button>
+    <nav class="mobile-nav" id="mobileNav">
+      <a href="#principios">Princípios</a>
+      <a href="#analises">Análises</a>
+      <a href="#redesign">Redesign</a>
+      <a href="#conclusao">Conclusão</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="hero">
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span> INTRODUÇÃO A SISTEMAS E MÍDIAS DIGITAIS</p>
+          <h1>Quatro princípios.<br><em>Cinco interfaces.</em><br>Um olhar crítico.</h1>
+          <p class="hero-text">Uma análise visual de problemas encontrados em peças digitais — e de como pequenas decisões de design podem tornar uma interface mais clara, consistente e fácil de usar.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#principios">Explorar análise <span>↓</span></a>
+            <a class="text-link" href="#metodo">Como analisamos <span>↘</span></a>
+          </div>
+        </div>
+        <div class="hero-art reveal delay-1" aria-label="Composição visual dos quatro princípios">
+          <div class="orb orb-a"></div><div class="orb orb-b"></div>
+          <div class="principle-ring">
+            <div class="ring-center"><strong>4</strong><small>PRINCÍPIOS</small></div>
+            <span class="ring-label r1">CONTRASTE</span>
+            <span class="ring-label r2">REPETIÇÃO</span>
+            <span class="ring-label r3">ALINHAMENTO</span>
+            <span class="ring-label r4">PROXIMIDADE</span>
+          </div>
+          <div class="floating-note note-1">organizar</div>
+          <div class="floating-note note-2">hierarquia</div>
+          <div class="floating-note note-3">clareza</div>
+        </div>
+      </div>
+      <div class="scroll-cue"><span></span> role para explorar</div>
+    </section>
+
+    <section class="intro section" id="metodo">
+      <div class="section-kicker reveal">01 / CONTEXTO</div>
+      <div class="intro-grid">
+        <h2 class="reveal">Design não é só<br><span>aparência.</span></h2>
+        <div class="intro-text reveal delay-1">
+          <p>Antes de analisar as peças, partimos dos quatro princípios clássicos apresentados nos textos estudados: <strong>contraste, repetição, alinhamento e proximidade.</strong></p>
+          <p>Eles ajudam a organizar a informação, criar hierarquia e estabelecer relações entre os elementos. Quando são ignorados, uma interface pode continuar “funcionando”, mas exigir mais esforço para ser compreendida.</p>
+          <div class="source-box">
+            <span>BASE TEÓRICA</span>
+            <p>Os princípios são tratados como ferramentas para organizar o layout e facilitar a interpretação da mensagem.</p>
+            <a href="https://medium.com/@danbarrosdesign/quatro-principios-do-design-333de5f1563" target="_blank" rel="noopener">Ler referência →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="principles section" id="principios">
+      <div class="section-heading reveal">
+        <div><div class="section-kicker">02 / OS QUATRO</div><h2>Quatro ideias que<br><span>mudam a leitura.</span></h2></div>
+        <p>Toque ou passe o mouse sobre cada princípio para visualizar sua função no layout.</p>
+      </div>
+      <div class="principle-cards">
+        <button class="principle-card contrast active reveal" data-principle="contraste">
+          <span class="card-number">01</span><span class="card-icon icon-contrast">Aa</span>
+          <h3>Contraste</h3><p>Dar destaque ao que precisa chamar atenção.</p>
+        </button>
+        <button class="principle-card repetition reveal delay-1" data-principle="repeticao">
+          <span class="card-number">02</span><span class="card-icon icon-repeat">↻</span>
+          <h3>Repetição</h3><p>Criar consistência repetindo padrões reconhecíveis.</p>
+        </button>
+        <button class="principle-card alignment reveal delay-2" data-principle="alinhamento">
+          <span class="card-number">03</span><span class="card-icon icon-align">☷</span>
+          <h3>Alinhamento</h3><p>Conectar elementos e orientar o caminho de leitura.</p>
+        </button>
+        <button class="principle-card proximity reveal delay-3" data-principle="proximidade">
+          <span class="card-number">04</span><span class="card-icon icon-close">••</span>
+          <h3>Proximidade</h3><p>Agrupar o que se relaciona e separar o que não se relaciona.</p>
+        </button>
+      </div>
+      <div class="principle-detail reveal" id="principleDetail">
+        <div><span class="detail-label">PRINCÍPIO SELECIONADO</span><h3 id="detailTitle">Contraste</h3></div>
+        <p id="detailText">Use diferenças de tamanho, peso, cor, forma ou direção para estabelecer uma hierarquia clara. Contraste não é enfeite: é uma ferramenta de atenção.</p>
+      </div>
+    </section>
+
+    <section class="analyses section" id="analises">
+      <div class="section-heading reveal">
+        <div><div class="section-kicker">03 / INVESTIGAÇÃO</div><h2>Encontramos problemas.<br><span>Agora vamos redesenhar.</span></h2></div>
+        <p>Cinco peças digitais observadas pelo grupo. Em cada caso: problema, princípio relacionado e proposta de correção.</p>
+      </div>
+
+      <article class="case-card case-proximity reveal" id="fliptru">
+        <div class="case-meta"><span class="case-index">01</span><span class="tag">PROXIMIDADE</span><span class="piece">FLIPTRU</span></div>
+        <div class="case-grid">
+          <div class="case-copy">
+            <p class="mini-label">QUESTÃO IDENTIFICADA</p>
+            <h3>Quadrinhos grandes demais, grupos pequenos demais.</h3>
+            <p>A organização visual cria uma sensação de aperto entre os quadrinhos, enquanto algumas categorias ficam muito distantes entre si. O resultado é uma página que parece mais longa e fragmentada do que precisa ser.</p>
+            <div class="before-after-text"><div><b>Antes</b><span>Itens relacionados não têm distância consistente.</span></div><div><b>Depois</b><span>Grupos mais compactos e respiro controlado entre categorias.</span></div></div>
+          </div>
+          <div class="visual-column">
+            <div class="real-piece">
+              <div class="image-caption"><span>PEÇA ORIGINAL</span><span>FLIPTRU — imagem fornecida</span></div>
+              <div class="image-slot"><img src="assets/fliptru.png" alt="Imagem original do Fliptru" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><div class="image-placeholder"><b>FLIPTRU</b></div></div>
+            </div>
+            <div class="didactic-wrap">
+              <div class="image-caption"><span>MOCKUP DIDÁTICO</span><span>proximidade</span></div>
+              <div class="browser"><div class="browser-bar"><i></i><i></i><i></i><span>representação visual</span></div><div class="mock fliptru-mock before"><div class="mock-title">Quadrinhos</div><div class="comic-grid"><b></b><b></b><b></b><b></b><b></b><b></b></div><div class="mock-title far">Categorias</div><div class="cat-row"><i></i><i></i><i></i></div></div></div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="case-card case-proximity reveal" id="mec">
+        <div class="case-meta"><span class="case-index">02</span><span class="tag">PROXIMIDADE</span><span class="piece">MEC LIVROS</span></div>
+        <div class="case-grid reverse">
+          <div class="visual-column">
+            <div class="real-piece">
+              <div class="image-caption"><span>PEÇA ORIGINAL</span><span>MEC-LIVROS — imagem fornecida</span></div>
+              <div class="image-slot"><img src="assets/mec-livros.png" alt="Imagem original do MEC Livros" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><div class="image-placeholder"><b>MEC LIVROS</b></div></div>
+            </div>
+            <div class="didactic-wrap">
+              <div class="image-caption"><span>MOCKUP DIDÁTICO</span><span>proximidade</span></div>
+              <div class="browser"><div class="browser-bar"><i></i><i></i><i></i><span>representação visual</span></div><div class="mock mec-mock"><div class="mec-head">Biblioteca Digital</div><div class="mec-line"></div><div class="mec-category"><strong>Educação básica</strong><span>Materiais para estudantes</span></div><div class="mec-category"><strong>Ensino superior</strong><span>Materiais acadêmicos</span></div></div></div>
+            </div>
+          </div>
+          <div class="case-copy">
+            <p class="mini-label">QUESTÃO IDENTIFICADA</p>
+            <h3>Título e subtítulo quase encostados.</h3>
+            <p>A relação entre título e subtítulo é correta, mas a distância muito curta faz os dois parecerem um único bloco tipográfico. Reduzir o peso ou o tamanho do subtítulo e ajustar o espaçamento cria uma hierarquia mais confortável.</p>
+            <div class="before-after-text"><div><b>Antes</b><span>Dois níveis tipográficos visualmente próximos.</span></div><div><b>Depois</b><span>Hierarquia preservada com mais respiro.</span></div></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="case-card case-alignment reveal" id="fortaleza">
+        <div class="case-meta"><span class="case-index">03</span><span class="tag">ALINHAMENTO</span><span class="piece">PREFEITURA DE FORTALEZA</span></div>
+        <div class="case-grid">
+          <div class="case-copy">
+            <p class="mini-label">QUESTÃO IDENTIFICADA</p>
+            <h3>Categorias que parecem escapar do mesmo eixo.</h3>
+            <p>O desalinhamento entre categorias quebra a linha visual que deveria conectar os conteúdos. Mesmo quando os itens pertencem à mesma navegação, seus eixos diferentes tornam a leitura menos previsível.</p>
+            <div class="correction-list"><span>✓ definir uma coluna-base</span><span>✓ alinhar títulos e controles</span><span>✓ manter o mesmo recuo</span></div>
+          </div>
+          <div class="visual-column">
+            <div class="real-piece">
+              <div class="image-caption"><span>PEÇA ORIGINAL</span><span>prefeitura de Fortaleza — imagem fornecida</span></div>
+              <div class="image-slot"><img src="assets/prefeitura-fortaleza.png" alt="Imagem original do site da Prefeitura de Fortaleza" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><div class="image-placeholder"><b>PREFEITURA DE FORTALEZA</b></div></div>
+            </div>
+            <div class="didactic-wrap">
+              <div class="image-caption"><span>MOCKUP DIDÁTICO</span><span>alinhamento</span></div>
+              <div class="browser"><div class="browser-bar"><i></i><i></i><i></i><span>representação visual</span></div><div class="mock prefeitura-mock"><div class="pref-logo">FORTALEZA</div><div class="pref-nav"><b>Serviços</b><b class="off">Notícias</b><b>Prefeitura</b><b class="off2">Transparência</b></div><div class="pref-lines"><span></span><span class="shift"></span><span></span><span class="shift2"></span></div></div></div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="case-card case-contrast reveal" id="dolly">
+        <div class="case-meta"><span class="case-index">04</span><span class="tag">CONTRASTE</span><span class="piece">DOLLY</span></div>
+        <div class="case-grid reverse">
+          <div class="visual-column">
+            <div class="real-piece">
+              <div class="image-caption"><span>PEÇA ORIGINAL</span><span>DOLLY — imagem fornecida</span></div>
+              <div class="image-slot"><img src="assets/dolly.png" alt="Imagem original da peça digital da Dolly" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><div class="image-placeholder"><b>DOLLY</b></div></div>
+            </div>
+            <div class="didactic-wrap">
+              <div class="image-caption"><span>MOCKUP DIDÁTICO</span><span>contraste</span></div>
+              <div class="browser"><div class="browser-bar"><i></i><i></i><i></i><span>representação visual</span></div><div class="mock dolly-mock"><div class="dolly-burst">DOLLY!</div><div class="dolly-sale">OFERTA<br><strong>IMPERDÍVEL</strong></div><div class="dolly-btn">CLIQUE AQUI</div><div class="dolly-small">novidades • produtos • contato • loja</div></div></div>
+              <div class="visual-note"><span>CONTRASTE</span><strong>Quando tudo quer chamar atenção, nada vira prioridade.</strong></div>
+            </div>
+          </div>
+          <div class="case-copy">
+            <p class="mini-label">QUESTÃO IDENTIFICADA</p>
+            <h3>Quando tudo grita, nada lidera.</h3>
+            <p>Na peça analisada, cores, títulos, chamadas e elementos promocionais disputam a atenção. A proposta não é retirar personalidade, e sim criar um ponto focal: uma mensagem principal, uma secundária e informações de apoio.</p>
+            <div class="before-after-text"><div><b>Antes</b><span>Vários focos com peso visual semelhante.</span></div><div><b>Depois</b><span>Um foco principal + níveis de informação.</span></div></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="case-card case-repetition reveal" id="sigaa">
+        <div class="case-meta"><span class="case-index">05</span><span class="tag">REPETIÇÃO</span><span class="piece">SIGAA / SMD</span></div>
+        <div class="case-grid">
+          <div class="case-copy">
+            <p class="mini-label">QUESTÃO IDENTIFICADA</p>
+            <h3>A experiência muda de escala entre telas.</h3>
+            <p>Na tela inicial, o conteúdo principal fica concentrado no centro, deixando margens laterais muito grandes. Ao entrar em uma disciplina, a composição passa a ocupar quase toda a largura. Essa mudança enfraquece a sensação de sistema contínuo.</p>
+            <p class="case-note">Também observamos o uso de grandes áreas vazias à direita em algumas categorias. O espaço negativo é importante, mas precisa parecer intencional e contribuir para a hierarquia.</p>
+            <div class="correction-list"><span>✓ repetir a mesma lógica de grid</span><span>✓ manter escala e margens consistentes</span><span>✓ usar espaço vazio para separar grupos, não desperdiçar área útil</span></div>
+          </div>
+          <div class="visual-column">
+            <div class="real-piece">
+              <div class="image-caption"><span>PEÇA ORIGINAL</span><span>SIGAA — imagem fornecida</span></div>
+              <div class="sigaa-image-wrap">
+                <img src="assets/sigaa-anexo.jpeg" alt="Captura de tela do ambiente virtual SIGAA, mostrando menu lateral, lista de aulas e tarefas e painéis laterais">
+                <div class="image-overlay"><span>↔</span><strong>grid inconsistente</strong><small>compare a largura desta tela com a tela inicial</small></div>
+              </div>
+            </div>
+            <div class="didactic-wrap">
+              <div class="image-caption"><span>MOCKUP DIDÁTICO</span><span>repetição</span></div>
+              <div class="browser"><div class="browser-bar"><i></i><i></i><i></i><span>representação visual</span></div><div class="mock sigaa-mock"><aside><b>SIGAA</b><span>Principal</span><span>Ensino</span><span>Extensão</span><span>Pesquisa</span></aside><div class="sigaa-main"><div class="sigaa-top"><span>Minha turma</span><em>2026.2</em></div><h4>Introdução a Sistemas e Mídias Digitais</h4><div class="sigaa-cards"><b>AULAS</b><b>TAREFAS</b><b>AVISOS</b></div><div class="sigaa-empty">espaço lateral sem função clara</div></div></div></div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="redesign section" id="redesign">
+      <div class="section-kicker reveal">04 / PROPOSTA</div>
+      <div class="redesign-intro reveal">
+        <h2>Não basta apontar.<br><span>É preciso mostrar.</span></h2>
+        <p>O redesign abaixo sintetiza as correções sugeridas. Use o seletor para alternar entre uma composição problemática e uma composição mais organizada.</p>
+      </div>
+      <div class="redesign-stage reveal">
+        <div class="stage-toolbar">
+          <div><span class="live-dot"></span> protótipo interativo</div>
+          <div class="toggle" role="group" aria-label="Alternar composição">
+            <button class="toggle-btn active" data-view="problem">PROBLEMA</button>
+            <button class="toggle-btn" data-view="solution">CORREÇÃO</button>
+          </div>
+        </div>
+        <div class="demo-interface" id="demoInterface">
+          <div class="demo-sidebar"><div class="demo-logo">SIGAA<span>+</span></div><div class="demo-menu"><b>Principal</b><span>Ensino</span><span>Extensão</span><span>Pesquisa</span><span>Calendário</span></div></div>
+          <div class="demo-main">
+            <div class="demo-top"><span>Minha turma</span><span class="demo-pill">2026.2</span></div>
+            <div class="demo-title">Introdução a Sistemas e Mídias Digitais</div>
+            <div class="demo-grid-cards">
+              <div class="demo-card"><small>AULAS</small><strong>Materiais da disciplina</strong><span>06 conteúdos disponíveis</span></div>
+              <div class="demo-card"><small>TAREFAS</small><strong>Atividades</strong><span>03 tarefas em andamento</span></div>
+              <div class="demo-card wide"><small>PRÓXIMO PRAZO</small><strong>Tarefa 3 — Aula 6</strong><span>Entrega em 06/10/2026</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="solution-callouts">
+          <div><b>01</b><span>Grid único</span><small>mesmas margens em todas as telas</small></div>
+          <div><b>02</b><span>Hierarquia</span><small>títulos e ações com pesos distintos</small></div>
+          <div><b>03</b><span>Repetição</span><small>componentes consistentes</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="conclusion section" id="conclusao">
+      <div class="conclusion-card reveal">
+        <div class="section-kicker">05 / CONCLUSÃO</div>
+        <h2>Os quatro princípios não são regras para deixar tudo igual.</h2>
+        <p>Eles são ferramentas para decidir <strong>o que deve se aproximar, o que deve se destacar, o que deve se alinhar e o que deve se repetir.</strong> Ao olhar para interfaces digitais com essas quatro lentes, problemas que antes pareciam apenas “estranhos” passam a ser problemas de comunicação visual que podem ser explicados — e corrigidos.</p>
+        <a class="btn btn-light" href="#top">Voltar ao início ↑</a>
+      </div>
+      <div class="references reveal">
+        <div><span>REFERÊNCIAS DE ESTUDO</span><a href="https://medium.com/@danbarrosdesign/quatro-principios-do-design-333de5f1563" target="_blank" rel="noopener">Danilo Barros — Os quatro princípios básicos do design ↗</a></div>
+        <div><span>REFERÊNCIA VISUAL</span><a href="https://stripe.com/br" target="_blank" rel="noopener">Stripe — inspiração de estrutura e interação ↗</a></div>
+        <div><span>OBSERVAÇÃO</span><p>As análises são interpretações do grupo a partir das peças selecionadas. Os mockups de Fliptru, MEC, Prefeitura e Dolly são representações didáticas; a captura do SIGAA foi fornecida para a análise.</p></div>
+        <div class="team-credit"><span>INTEGRANTES</span><p><strong>Cintia Cassia Reis Braulino</strong><br><strong>SARA TORRES DE BRITO</strong><br><small>Curso: Sistemas e Mídias Digitais — UFC</small></p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand"><span>princípios.</span><small>Projeto acadêmico • Sistemas e Mídias Digitais — UFC</small></div>
+    <a href="#top">↑ topo</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
